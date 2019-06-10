@@ -1,0 +1,1658 @@
+{
+    "pos": 0,
+    "end": 2431,
+    "flags": 0,
+    "modifierFlagsCache": 0,
+    "transformFlags": 0,
+    "kind": 285,
+    "text": "import { override } from \"fluid-code/dart/core\";\nimport {\n  StatelessWidget,\n  runApp,\n  BuildContext,\n  Widget,\n  Key,\n  MainAxisAlignment,\n  Column,\n  Center,\n  AppBar,\n  Text,\n  Scaffold, \n  Colors\n} from \"fluid-code/flutter_web\";\nimport { MaterialApp, ThemeData } from \"fluid-code/flutter_web/material\";\n\nclass MyHomePage extends StatelessWidget {\n  title: string;\n\n  constructor({ title, key = undefined }) {\n    super({ key: key as Key });\n    this.title = title as string;\n  }\n\n  @override() \n  build(context: BuildContext): Widget {\n    // The Flutter framework has been optimized to make rerunning build methods\n    // fast, so that you can just rebuild anything that needs updating rather\n    // than having to individually change instances of widgets.\n    return new Scaffold({\n      appBar: new AppBar({\n        title: new Text(this.title)\n      }),\n      body: new Center({\n        // Center is a layout widget. It takes a single child and positions it\n        // in the middle of the parent.\n        child: new Column({\n          // Column is also layout widget. It takes a list of children and\n          // arranges them vertically. By default, it sizes itself to fit its\n          // children horizontally, and tries to be as tall as its parent.\n          //\n          // Invoke \"debug painting\" (choose the \"Toggle Debug Paint\" action\n          // from the Flutter Inspector in Android Studio, or the \"Toggle Debug\n          // Paint\" command in Visual Studio Code) to see the wireframe for each\n          // widget.\n          //\n          // Column has various properties to control how it sizes itself and\n          // how it positions its children. Here we use mainAxisAlignment to\n          // center the children vertically; the main axis here is the vertical\n          // axis because Columns are vertical (the cross axis would be\n          // horizontal).\n          mainAxisAlignment: MainAxisAlignment.center,\n          children: [new Text(\"Hello, World!\")] as Widget[]\n        })\n      })\n    });\n  }\n}\n\nclass MyApp extends StatelessWidget {\n  // This widget is the root of your application.\n  @override()\n  build(context: BuildContext): Widget {\n    return new MaterialApp({\n      title: \"Flutter Demo\",\n      theme: new ThemeData({\n        primarySwatch: Colors.blue\n      }),\n      home: new MyHomePage({ title: \"Flutter Demo Home Page \" })\n    });\n  }\n}\n\nconst main = (): void => runApp(new MyApp());\n",
+    "bindDiagnostics": [],
+    "languageVersion": 8,
+    "fileName": "main.ts",
+    "languageVariant": 1,
+    "isDeclarationFile": false,
+    "scriptKind": 4,
+    "pragmas": {},
+    "referencedFiles": [],
+    "typeReferenceDirectives": [],
+    "libReferenceDirectives": [],
+    "amdDependencies": [],
+    "hasNoDefaultLib": false,
+    "statements": [
+        {
+            "pos": 0,
+            "end": 48,
+            "flags": 0,
+            "modifierFlagsCache": 536870912,
+            "transformFlags": 0,
+            "kind": 250,
+            "importClause": {
+                "pos": 6,
+                "end": 19,
+                "flags": 0,
+                "modifierFlagsCache": 0,
+                "transformFlags": 0,
+                "kind": 251,
+                "namedBindings": {
+                    "pos": 6,
+                    "end": 19,
+                    "flags": 0,
+                    "modifierFlagsCache": 0,
+                    "transformFlags": 0,
+                    "kind": 253,
+                    "elements": [
+                        {
+                            "pos": 8,
+                            "end": 17,
+                            "flags": 0,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 254,
+                            "name": {
+                                "pos": 8,
+                                "end": 17,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "escapedText": "override"
+                            }
+                        }
+                    ]
+                }
+            },
+            "moduleSpecifier": {
+                "pos": 24,
+                "end": 47,
+                "flags": 0,
+                "modifierFlagsCache": 0,
+                "transformFlags": 0,
+                "kind": 10,
+                "text": "fluid-code/dart/core"
+            }
+        },
+        {
+            "pos": 48,
+            "end": 233,
+            "flags": 0,
+            "modifierFlagsCache": 0,
+            "transformFlags": 0,
+            "kind": 250,
+            "importClause": {
+                "pos": 55,
+                "end": 202,
+                "flags": 0,
+                "modifierFlagsCache": 0,
+                "transformFlags": 0,
+                "kind": 251,
+                "namedBindings": {
+                    "pos": 55,
+                    "end": 202,
+                    "flags": 0,
+                    "modifierFlagsCache": 0,
+                    "transformFlags": 0,
+                    "kind": 253,
+                    "elements": [
+                        {
+                            "pos": 57,
+                            "end": 75,
+                            "flags": 0,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 254,
+                            "name": {
+                                "pos": 57,
+                                "end": 75,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "escapedText": "StatelessWidget"
+                            }
+                        },
+                        {
+                            "pos": 76,
+                            "end": 85,
+                            "flags": 0,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 254,
+                            "name": {
+                                "pos": 76,
+                                "end": 85,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "escapedText": "runApp"
+                            }
+                        },
+                        {
+                            "pos": 86,
+                            "end": 101,
+                            "flags": 0,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 254,
+                            "name": {
+                                "pos": 86,
+                                "end": 101,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "escapedText": "BuildContext"
+                            }
+                        },
+                        {
+                            "pos": 102,
+                            "end": 111,
+                            "flags": 0,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 254,
+                            "name": {
+                                "pos": 102,
+                                "end": 111,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "escapedText": "Widget"
+                            }
+                        },
+                        {
+                            "pos": 112,
+                            "end": 118,
+                            "flags": 0,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 254,
+                            "name": {
+                                "pos": 112,
+                                "end": 118,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "escapedText": "Key"
+                            }
+                        },
+                        {
+                            "pos": 119,
+                            "end": 139,
+                            "flags": 0,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 254,
+                            "name": {
+                                "pos": 119,
+                                "end": 139,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "escapedText": "MainAxisAlignment"
+                            }
+                        },
+                        {
+                            "pos": 140,
+                            "end": 149,
+                            "flags": 0,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 254,
+                            "name": {
+                                "pos": 140,
+                                "end": 149,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "escapedText": "Column"
+                            }
+                        },
+                        {
+                            "pos": 150,
+                            "end": 159,
+                            "flags": 0,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 254,
+                            "name": {
+                                "pos": 150,
+                                "end": 159,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "escapedText": "Center"
+                            }
+                        },
+                        {
+                            "pos": 160,
+                            "end": 169,
+                            "flags": 0,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 254,
+                            "name": {
+                                "pos": 160,
+                                "end": 169,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "escapedText": "AppBar"
+                            }
+                        },
+                        {
+                            "pos": 170,
+                            "end": 177,
+                            "flags": 0,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 254,
+                            "name": {
+                                "pos": 170,
+                                "end": 177,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "escapedText": "Text"
+                            }
+                        },
+                        {
+                            "pos": 178,
+                            "end": 189,
+                            "flags": 0,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 254,
+                            "name": {
+                                "pos": 178,
+                                "end": 189,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "escapedText": "Scaffold"
+                            }
+                        },
+                        {
+                            "pos": 190,
+                            "end": 200,
+                            "flags": 0,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 254,
+                            "name": {
+                                "pos": 190,
+                                "end": 200,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "escapedText": "Colors"
+                            }
+                        }
+                    ]
+                }
+            },
+            "moduleSpecifier": {
+                "pos": 207,
+                "end": 232,
+                "flags": 0,
+                "modifierFlagsCache": 0,
+                "transformFlags": 0,
+                "kind": 10,
+                "text": "fluid-code/flutter_web"
+            }
+        },
+        {
+            "pos": 233,
+            "end": 307,
+            "flags": 0,
+            "modifierFlagsCache": 0,
+            "transformFlags": 0,
+            "kind": 250,
+            "importClause": {
+                "pos": 240,
+                "end": 267,
+                "flags": 0,
+                "modifierFlagsCache": 0,
+                "transformFlags": 0,
+                "kind": 251,
+                "namedBindings": {
+                    "pos": 240,
+                    "end": 267,
+                    "flags": 0,
+                    "modifierFlagsCache": 0,
+                    "transformFlags": 0,
+                    "kind": 253,
+                    "elements": [
+                        {
+                            "pos": 242,
+                            "end": 254,
+                            "flags": 0,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 254,
+                            "name": {
+                                "pos": 242,
+                                "end": 254,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "escapedText": "MaterialApp"
+                            }
+                        },
+                        {
+                            "pos": 255,
+                            "end": 265,
+                            "flags": 0,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 254,
+                            "name": {
+                                "pos": 255,
+                                "end": 265,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "escapedText": "ThemeData"
+                            }
+                        }
+                    ]
+                }
+            },
+            "moduleSpecifier": {
+                "pos": 272,
+                "end": 306,
+                "flags": 0,
+                "modifierFlagsCache": 0,
+                "transformFlags": 0,
+                "kind": 10,
+                "text": "fluid-code/flutter_web/material"
+            }
+        },
+        {
+            "pos": 307,
+            "end": 2028,
+            "flags": 0,
+            "modifierFlagsCache": 0,
+            "transformFlags": 0,
+            "kind": 241,
+            "name": {
+                "pos": 314,
+                "end": 325,
+                "flags": 0,
+                "modifierFlagsCache": 0,
+                "transformFlags": 0,
+                "escapedText": "MyHomePage"
+            },
+            "heritageClauses": [
+                {
+                    "pos": 325,
+                    "end": 349,
+                    "flags": 0,
+                    "modifierFlagsCache": 0,
+                    "transformFlags": 0,
+                    "kind": 274,
+                    "token": 87,
+                    "types": [
+                        {
+                            "pos": 333,
+                            "end": 349,
+                            "flags": 0,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 212,
+                            "expression": {
+                                "pos": 333,
+                                "end": 349,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "escapedText": "StatelessWidget"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "members": [
+                {
+                    "pos": 351,
+                    "end": 368,
+                    "flags": 0,
+                    "modifierFlagsCache": 536870912,
+                    "transformFlags": 0,
+                    "kind": 155,
+                    "name": {
+                        "pos": 351,
+                        "end": 359,
+                        "flags": 0,
+                        "modifierFlagsCache": 0,
+                        "transformFlags": 0,
+                        "escapedText": "title"
+                    },
+                    "type": {
+                        "pos": 360,
+                        "end": 367,
+                        "flags": 0,
+                        "modifierFlagsCache": 0,
+                        "transformFlags": 0,
+                        "kind": 139
+                    }
+                },
+                {
+                    "pos": 368,
+                    "end": 483,
+                    "flags": 0,
+                    "modifierFlagsCache": 0,
+                    "transformFlags": 0,
+                    "kind": 158,
+                    "parameters": [
+                        {
+                            "pos": 384,
+                            "end": 410,
+                            "flags": 0,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 152,
+                            "name": {
+                                "pos": 384,
+                                "end": 410,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 185,
+                                "elements": [
+                                    {
+                                        "pos": 385,
+                                        "end": 391,
+                                        "flags": 0,
+                                        "modifierFlagsCache": 0,
+                                        "transformFlags": 0,
+                                        "kind": 187,
+                                        "name": {
+                                            "pos": 385,
+                                            "end": 391,
+                                            "flags": 0,
+                                            "modifierFlagsCache": 0,
+                                            "transformFlags": 0,
+                                            "escapedText": "title"
+                                        }
+                                    },
+                                    {
+                                        "pos": 392,
+                                        "end": 408,
+                                        "flags": 0,
+                                        "modifierFlagsCache": 0,
+                                        "transformFlags": 0,
+                                        "kind": 187,
+                                        "name": {
+                                            "pos": 392,
+                                            "end": 396,
+                                            "flags": 0,
+                                            "modifierFlagsCache": 0,
+                                            "transformFlags": 0,
+                                            "escapedText": "key"
+                                        },
+                                        "initializer": {
+                                            "pos": 398,
+                                            "end": 408,
+                                            "flags": 0,
+                                            "modifierFlagsCache": 0,
+                                            "transformFlags": 0,
+                                            "originalKeywordKind": 142,
+                                            "escapedText": "undefined"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "body": {
+                        "pos": 411,
+                        "end": 483,
+                        "flags": 0,
+                        "modifierFlagsCache": 0,
+                        "transformFlags": 0,
+                        "kind": 219,
+                        "multiLine": true,
+                        "statements": [
+                            {
+                                "pos": 413,
+                                "end": 445,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 222,
+                                "expression": {
+                                    "pos": 413,
+                                    "end": 444,
+                                    "flags": 0,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 0,
+                                    "kind": 192,
+                                    "expression": {
+                                        "pos": 413,
+                                        "end": 423,
+                                        "flags": 0,
+                                        "modifierFlagsCache": 0,
+                                        "transformFlags": 0,
+                                        "kind": 99
+                                    },
+                                    "arguments": [
+                                        {
+                                            "pos": 424,
+                                            "end": 443,
+                                            "flags": 0,
+                                            "modifierFlagsCache": 0,
+                                            "transformFlags": 0,
+                                            "kind": 189,
+                                            "properties": [
+                                                {
+                                                    "pos": 425,
+                                                    "end": 441,
+                                                    "flags": 0,
+                                                    "modifierFlagsCache": 0,
+                                                    "transformFlags": 0,
+                                                    "kind": 276,
+                                                    "name": {
+                                                        "pos": 425,
+                                                        "end": 429,
+                                                        "flags": 0,
+                                                        "modifierFlagsCache": 0,
+                                                        "transformFlags": 0,
+                                                        "escapedText": "key"
+                                                    },
+                                                    "initializer": {
+                                                        "pos": 430,
+                                                        "end": 441,
+                                                        "flags": 0,
+                                                        "modifierFlagsCache": 0,
+                                                        "transformFlags": 0,
+                                                        "kind": 213,
+                                                        "expression": {
+                                                            "pos": 430,
+                                                            "end": 434,
+                                                            "flags": 0,
+                                                            "modifierFlagsCache": 0,
+                                                            "transformFlags": 0,
+                                                            "escapedText": "key"
+                                                        },
+                                                        "type": {
+                                                            "pos": 437,
+                                                            "end": 441,
+                                                            "flags": 0,
+                                                            "modifierFlagsCache": 0,
+                                                            "transformFlags": 0,
+                                                            "kind": 165,
+                                                            "typeName": {
+                                                                "pos": 437,
+                                                                "end": 441,
+                                                                "flags": 0,
+                                                                "modifierFlagsCache": 0,
+                                                                "transformFlags": 0,
+                                                                "escapedText": "Key"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "pos": 445,
+                                "end": 479,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 222,
+                                "expression": {
+                                    "pos": 445,
+                                    "end": 478,
+                                    "flags": 0,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 0,
+                                    "kind": 205,
+                                    "left": {
+                                        "pos": 445,
+                                        "end": 460,
+                                        "flags": 0,
+                                        "modifierFlagsCache": 0,
+                                        "transformFlags": 0,
+                                        "kind": 190,
+                                        "expression": {
+                                            "pos": 445,
+                                            "end": 454,
+                                            "flags": 0,
+                                            "modifierFlagsCache": 0,
+                                            "transformFlags": 0,
+                                            "kind": 101
+                                        },
+                                        "name": {
+                                            "pos": 455,
+                                            "end": 460,
+                                            "flags": 0,
+                                            "modifierFlagsCache": 0,
+                                            "transformFlags": 0,
+                                            "escapedText": "title"
+                                        }
+                                    },
+                                    "operatorToken": {
+                                        "pos": 460,
+                                        "end": 462,
+                                        "flags": 0,
+                                        "modifierFlagsCache": 0,
+                                        "transformFlags": 0,
+                                        "kind": 60
+                                    },
+                                    "right": {
+                                        "pos": 462,
+                                        "end": 478,
+                                        "flags": 0,
+                                        "modifierFlagsCache": 0,
+                                        "transformFlags": 0,
+                                        "kind": 213,
+                                        "expression": {
+                                            "pos": 462,
+                                            "end": 468,
+                                            "flags": 0,
+                                            "modifierFlagsCache": 0,
+                                            "transformFlags": 0,
+                                            "escapedText": "title"
+                                        },
+                                        "type": {
+                                            "pos": 471,
+                                            "end": 478,
+                                            "flags": 0,
+                                            "modifierFlagsCache": 0,
+                                            "transformFlags": 0,
+                                            "kind": 139
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pos": 483,
+                    "end": 2026,
+                    "flags": 0,
+                    "modifierFlagsCache": 536870912,
+                    "transformFlags": 0,
+                    "kind": 157,
+                    "decorators": [
+                        {
+                            "pos": 483,
+                            "end": 498,
+                            "flags": 0,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 153,
+                            "expression": {
+                                "pos": 488,
+                                "end": 498,
+                                "flags": 8192,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 192,
+                                "expression": {
+                                    "pos": 488,
+                                    "end": 496,
+                                    "flags": 8192,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 0,
+                                    "escapedText": "override"
+                                },
+                                "arguments": []
+                            }
+                        }
+                    ],
+                    "name": {
+                        "pos": 498,
+                        "end": 507,
+                        "flags": 0,
+                        "modifierFlagsCache": 0,
+                        "transformFlags": 0,
+                        "escapedText": "build"
+                    },
+                    "parameters": [
+                        {
+                            "pos": 508,
+                            "end": 529,
+                            "flags": 0,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 152,
+                            "name": {
+                                "pos": 508,
+                                "end": 515,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "escapedText": "context"
+                            },
+                            "type": {
+                                "pos": 516,
+                                "end": 529,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 165,
+                                "typeName": {
+                                    "pos": 516,
+                                    "end": 529,
+                                    "flags": 0,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 0,
+                                    "escapedText": "BuildContext"
+                                }
+                            }
+                        }
+                    ],
+                    "type": {
+                        "pos": 531,
+                        "end": 538,
+                        "flags": 0,
+                        "modifierFlagsCache": 0,
+                        "transformFlags": 0,
+                        "kind": 165,
+                        "typeName": {
+                            "pos": 531,
+                            "end": 538,
+                            "flags": 0,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "escapedText": "Widget"
+                        }
+                    },
+                    "body": {
+                        "pos": 538,
+                        "end": 2026,
+                        "flags": 0,
+                        "modifierFlagsCache": 0,
+                        "transformFlags": 0,
+                        "kind": 219,
+                        "multiLine": true,
+                        "statements": [
+                            {
+                                "pos": 540,
+                                "end": 2022,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 231,
+                                "expression": {
+                                    "pos": 773,
+                                    "end": 2021,
+                                    "flags": 0,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 0,
+                                    "kind": 193,
+                                    "expression": {
+                                        "pos": 777,
+                                        "end": 786,
+                                        "flags": 0,
+                                        "modifierFlagsCache": 0,
+                                        "transformFlags": 0,
+                                        "escapedText": "Scaffold"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "pos": 787,
+                                            "end": 2020,
+                                            "flags": 0,
+                                            "modifierFlagsCache": 0,
+                                            "transformFlags": 0,
+                                            "kind": 189,
+                                            "multiLine": true,
+                                            "properties": [
+                                                {
+                                                    "pos": 788,
+                                                    "end": 860,
+                                                    "flags": 0,
+                                                    "modifierFlagsCache": 0,
+                                                    "transformFlags": 0,
+                                                    "kind": 276,
+                                                    "name": {
+                                                        "pos": 788,
+                                                        "end": 801,
+                                                        "flags": 0,
+                                                        "modifierFlagsCache": 0,
+                                                        "transformFlags": 0,
+                                                        "escapedText": "appBar"
+                                                    },
+                                                    "initializer": {
+                                                        "pos": 802,
+                                                        "end": 860,
+                                                        "flags": 0,
+                                                        "modifierFlagsCache": 0,
+                                                        "transformFlags": 0,
+                                                        "kind": 193,
+                                                        "expression": {
+                                                            "pos": 806,
+                                                            "end": 813,
+                                                            "flags": 0,
+                                                            "modifierFlagsCache": 0,
+                                                            "transformFlags": 0,
+                                                            "escapedText": "AppBar"
+                                                        },
+                                                        "arguments": [
+                                                            {
+                                                                "pos": 814,
+                                                                "end": 859,
+                                                                "flags": 0,
+                                                                "modifierFlagsCache": 0,
+                                                                "transformFlags": 0,
+                                                                "kind": 189,
+                                                                "multiLine": true,
+                                                                "properties": [
+                                                                    {
+                                                                        "pos": 815,
+                                                                        "end": 851,
+                                                                        "flags": 0,
+                                                                        "modifierFlagsCache": 0,
+                                                                        "transformFlags": 0,
+                                                                        "kind": 276,
+                                                                        "name": {
+                                                                            "pos": 815,
+                                                                            "end": 829,
+                                                                            "flags": 0,
+                                                                            "modifierFlagsCache": 0,
+                                                                            "transformFlags": 0,
+                                                                            "escapedText": "title"
+                                                                        },
+                                                                        "initializer": {
+                                                                            "pos": 830,
+                                                                            "end": 851,
+                                                                            "flags": 0,
+                                                                            "modifierFlagsCache": 0,
+                                                                            "transformFlags": 0,
+                                                                            "kind": 193,
+                                                                            "expression": {
+                                                                                "pos": 834,
+                                                                                "end": 839,
+                                                                                "flags": 0,
+                                                                                "modifierFlagsCache": 0,
+                                                                                "transformFlags": 0,
+                                                                                "escapedText": "Text"
+                                                                            },
+                                                                            "arguments": [
+                                                                                {
+                                                                                    "pos": 840,
+                                                                                    "end": 850,
+                                                                                    "flags": 0,
+                                                                                    "modifierFlagsCache": 0,
+                                                                                    "transformFlags": 0,
+                                                                                    "kind": 190,
+                                                                                    "expression": {
+                                                                                        "pos": 840,
+                                                                                        "end": 844,
+                                                                                        "flags": 0,
+                                                                                        "modifierFlagsCache": 0,
+                                                                                        "transformFlags": 0,
+                                                                                        "kind": 101
+                                                                                    },
+                                                                                    "name": {
+                                                                                        "pos": 845,
+                                                                                        "end": 850,
+                                                                                        "flags": 0,
+                                                                                        "modifierFlagsCache": 0,
+                                                                                        "transformFlags": 0,
+                                                                                        "escapedText": "title"
+                                                                                    }
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "pos": 861,
+                                                    "end": 2014,
+                                                    "flags": 0,
+                                                    "modifierFlagsCache": 0,
+                                                    "transformFlags": 0,
+                                                    "kind": 276,
+                                                    "name": {
+                                                        "pos": 861,
+                                                        "end": 872,
+                                                        "flags": 0,
+                                                        "modifierFlagsCache": 0,
+                                                        "transformFlags": 0,
+                                                        "escapedText": "body"
+                                                    },
+                                                    "initializer": {
+                                                        "pos": 873,
+                                                        "end": 2014,
+                                                        "flags": 0,
+                                                        "modifierFlagsCache": 0,
+                                                        "transformFlags": 0,
+                                                        "kind": 193,
+                                                        "expression": {
+                                                            "pos": 877,
+                                                            "end": 884,
+                                                            "flags": 0,
+                                                            "modifierFlagsCache": 0,
+                                                            "transformFlags": 0,
+                                                            "escapedText": "Center"
+                                                        },
+                                                        "arguments": [
+                                                            {
+                                                                "pos": 885,
+                                                                "end": 2013,
+                                                                "flags": 0,
+                                                                "modifierFlagsCache": 0,
+                                                                "transformFlags": 0,
+                                                                "kind": 189,
+                                                                "multiLine": true,
+                                                                "properties": [
+                                                                    {
+                                                                        "pos": 886,
+                                                                        "end": 2005,
+                                                                        "flags": 0,
+                                                                        "modifierFlagsCache": 0,
+                                                                        "transformFlags": 0,
+                                                                        "kind": 276,
+                                                                        "name": {
+                                                                            "pos": 886,
+                                                                            "end": 1019,
+                                                                            "flags": 0,
+                                                                            "modifierFlagsCache": 0,
+                                                                            "transformFlags": 0,
+                                                                            "escapedText": "child"
+                                                                        },
+                                                                        "initializer": {
+                                                                            "pos": 1020,
+                                                                            "end": 2005,
+                                                                            "flags": 0,
+                                                                            "modifierFlagsCache": 0,
+                                                                            "transformFlags": 0,
+                                                                            "kind": 193,
+                                                                            "expression": {
+                                                                                "pos": 1024,
+                                                                                "end": 1031,
+                                                                                "flags": 0,
+                                                                                "modifierFlagsCache": 0,
+                                                                                "transformFlags": 0,
+                                                                                "escapedText": "Column"
+                                                                            },
+                                                                            "arguments": [
+                                                                                {
+                                                                                    "pos": 1032,
+                                                                                    "end": 2004,
+                                                                                    "flags": 0,
+                                                                                    "modifierFlagsCache": 0,
+                                                                                    "transformFlags": 0,
+                                                                                    "kind": 189,
+                                                                                    "multiLine": true,
+                                                                                    "properties": [
+                                                                                        {
+                                                                                            "pos": 1033,
+                                                                                            "end": 1933,
+                                                                                            "flags": 0,
+                                                                                            "modifierFlagsCache": 0,
+                                                                                            "transformFlags": 0,
+                                                                                            "kind": 276,
+                                                                                            "name": {
+                                                                                                "pos": 1033,
+                                                                                                "end": 1907,
+                                                                                                "flags": 0,
+                                                                                                "modifierFlagsCache": 0,
+                                                                                                "transformFlags": 0,
+                                                                                                "escapedText": "mainAxisAlignment"
+                                                                                            },
+                                                                                            "initializer": {
+                                                                                                "pos": 1908,
+                                                                                                "end": 1933,
+                                                                                                "flags": 0,
+                                                                                                "modifierFlagsCache": 0,
+                                                                                                "transformFlags": 0,
+                                                                                                "kind": 190,
+                                                                                                "expression": {
+                                                                                                    "pos": 1908,
+                                                                                                    "end": 1926,
+                                                                                                    "flags": 0,
+                                                                                                    "modifierFlagsCache": 0,
+                                                                                                    "transformFlags": 0,
+                                                                                                    "escapedText": "MainAxisAlignment"
+                                                                                                },
+                                                                                                "name": {
+                                                                                                    "pos": 1927,
+                                                                                                    "end": 1933,
+                                                                                                    "flags": 0,
+                                                                                                    "modifierFlagsCache": 0,
+                                                                                                    "transformFlags": 0,
+                                                                                                    "escapedText": "center"
+                                                                                                }
+                                                                                            }
+                                                                                        },
+                                                                                        {
+                                                                                            "pos": 1934,
+                                                                                            "end": 1994,
+                                                                                            "flags": 0,
+                                                                                            "modifierFlagsCache": 0,
+                                                                                            "transformFlags": 0,
+                                                                                            "kind": 276,
+                                                                                            "name": {
+                                                                                                "pos": 1934,
+                                                                                                "end": 1953,
+                                                                                                "flags": 0,
+                                                                                                "modifierFlagsCache": 0,
+                                                                                                "transformFlags": 0,
+                                                                                                "escapedText": "children"
+                                                                                            },
+                                                                                            "initializer": {
+                                                                                                "pos": 1954,
+                                                                                                "end": 1994,
+                                                                                                "flags": 0,
+                                                                                                "modifierFlagsCache": 0,
+                                                                                                "transformFlags": 0,
+                                                                                                "kind": 213,
+                                                                                                "expression": {
+                                                                                                    "pos": 1954,
+                                                                                                    "end": 1982,
+                                                                                                    "flags": 0,
+                                                                                                    "modifierFlagsCache": 0,
+                                                                                                    "transformFlags": 0,
+                                                                                                    "kind": 188,
+                                                                                                    "elements": [
+                                                                                                        {
+                                                                                                            "pos": 1956,
+                                                                                                            "end": 1981,
+                                                                                                            "flags": 0,
+                                                                                                            "modifierFlagsCache": 0,
+                                                                                                            "transformFlags": 0,
+                                                                                                            "kind": 193,
+                                                                                                            "expression": {
+                                                                                                                "pos": 1959,
+                                                                                                                "end": 1964,
+                                                                                                                "flags": 0,
+                                                                                                                "modifierFlagsCache": 0,
+                                                                                                                "transformFlags": 0,
+                                                                                                                "escapedText": "Text"
+                                                                                                            },
+                                                                                                            "arguments": [
+                                                                                                                {
+                                                                                                                    "pos": 1965,
+                                                                                                                    "end": 1980,
+                                                                                                                    "flags": 0,
+                                                                                                                    "modifierFlagsCache": 0,
+                                                                                                                    "transformFlags": 0,
+                                                                                                                    "kind": 10,
+                                                                                                                    "text": "Hello, World!"
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                "type": {
+                                                                                                    "pos": 1985,
+                                                                                                    "end": 1994,
+                                                                                                    "flags": 0,
+                                                                                                    "modifierFlagsCache": 0,
+                                                                                                    "transformFlags": 0,
+                                                                                                    "kind": 170,
+                                                                                                    "elementType": {
+                                                                                                        "pos": 1985,
+                                                                                                        "end": 1992,
+                                                                                                        "flags": 0,
+                                                                                                        "modifierFlagsCache": 0,
+                                                                                                        "transformFlags": 0,
+                                                                                                        "kind": 165,
+                                                                                                        "typeName": {
+                                                                                                            "pos": 1985,
+                                                                                                            "end": 1992,
+                                                                                                            "flags": 0,
+                                                                                                            "modifierFlagsCache": 0,
+                                                                                                            "transformFlags": 0,
+                                                                                                            "escapedText": "Widget"
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "pos": 2028,
+            "end": 2383,
+            "flags": 0,
+            "modifierFlagsCache": 0,
+            "transformFlags": 0,
+            "kind": 241,
+            "name": {
+                "pos": 2035,
+                "end": 2041,
+                "flags": 0,
+                "modifierFlagsCache": 0,
+                "transformFlags": 0,
+                "escapedText": "MyApp"
+            },
+            "heritageClauses": [
+                {
+                    "pos": 2041,
+                    "end": 2065,
+                    "flags": 0,
+                    "modifierFlagsCache": 0,
+                    "transformFlags": 0,
+                    "kind": 274,
+                    "token": 87,
+                    "types": [
+                        {
+                            "pos": 2049,
+                            "end": 2065,
+                            "flags": 0,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 212,
+                            "expression": {
+                                "pos": 2049,
+                                "end": 2065,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "escapedText": "StatelessWidget"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "members": [
+                {
+                    "pos": 2067,
+                    "end": 2381,
+                    "flags": 0,
+                    "modifierFlagsCache": 536870912,
+                    "transformFlags": 0,
+                    "kind": 157,
+                    "decorators": [
+                        {
+                            "pos": 2067,
+                            "end": 2131,
+                            "flags": 0,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 153,
+                            "expression": {
+                                "pos": 2121,
+                                "end": 2131,
+                                "flags": 8192,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 192,
+                                "expression": {
+                                    "pos": 2121,
+                                    "end": 2129,
+                                    "flags": 8192,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 0,
+                                    "escapedText": "override"
+                                },
+                                "arguments": []
+                            }
+                        }
+                    ],
+                    "name": {
+                        "pos": 2131,
+                        "end": 2139,
+                        "flags": 0,
+                        "modifierFlagsCache": 0,
+                        "transformFlags": 0,
+                        "escapedText": "build"
+                    },
+                    "parameters": [
+                        {
+                            "pos": 2140,
+                            "end": 2161,
+                            "flags": 0,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 152,
+                            "name": {
+                                "pos": 2140,
+                                "end": 2147,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "escapedText": "context"
+                            },
+                            "type": {
+                                "pos": 2148,
+                                "end": 2161,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 165,
+                                "typeName": {
+                                    "pos": 2148,
+                                    "end": 2161,
+                                    "flags": 0,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 0,
+                                    "escapedText": "BuildContext"
+                                }
+                            }
+                        }
+                    ],
+                    "type": {
+                        "pos": 2163,
+                        "end": 2170,
+                        "flags": 0,
+                        "modifierFlagsCache": 0,
+                        "transformFlags": 0,
+                        "kind": 165,
+                        "typeName": {
+                            "pos": 2163,
+                            "end": 2170,
+                            "flags": 0,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "escapedText": "Widget"
+                        }
+                    },
+                    "body": {
+                        "pos": 2170,
+                        "end": 2381,
+                        "flags": 0,
+                        "modifierFlagsCache": 0,
+                        "transformFlags": 0,
+                        "kind": 219,
+                        "multiLine": true,
+                        "statements": [
+                            {
+                                "pos": 2172,
+                                "end": 2377,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 231,
+                                "expression": {
+                                    "pos": 2183,
+                                    "end": 2376,
+                                    "flags": 0,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 0,
+                                    "kind": 193,
+                                    "expression": {
+                                        "pos": 2187,
+                                        "end": 2199,
+                                        "flags": 0,
+                                        "modifierFlagsCache": 0,
+                                        "transformFlags": 0,
+                                        "escapedText": "MaterialApp"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "pos": 2200,
+                                            "end": 2375,
+                                            "flags": 0,
+                                            "modifierFlagsCache": 0,
+                                            "transformFlags": 0,
+                                            "kind": 189,
+                                            "multiLine": true,
+                                            "properties": [
+                                                {
+                                                    "pos": 2201,
+                                                    "end": 2229,
+                                                    "flags": 0,
+                                                    "modifierFlagsCache": 0,
+                                                    "transformFlags": 0,
+                                                    "kind": 276,
+                                                    "name": {
+                                                        "pos": 2201,
+                                                        "end": 2213,
+                                                        "flags": 0,
+                                                        "modifierFlagsCache": 0,
+                                                        "transformFlags": 0,
+                                                        "escapedText": "title"
+                                                    },
+                                                    "initializer": {
+                                                        "pos": 2214,
+                                                        "end": 2229,
+                                                        "flags": 0,
+                                                        "modifierFlagsCache": 0,
+                                                        "transformFlags": 0,
+                                                        "kind": 10,
+                                                        "text": "Flutter Demo"
+                                                    }
+                                                },
+                                                {
+                                                    "pos": 2230,
+                                                    "end": 2303,
+                                                    "flags": 0,
+                                                    "modifierFlagsCache": 0,
+                                                    "transformFlags": 0,
+                                                    "kind": 276,
+                                                    "name": {
+                                                        "pos": 2230,
+                                                        "end": 2242,
+                                                        "flags": 0,
+                                                        "modifierFlagsCache": 0,
+                                                        "transformFlags": 0,
+                                                        "escapedText": "theme"
+                                                    },
+                                                    "initializer": {
+                                                        "pos": 2243,
+                                                        "end": 2303,
+                                                        "flags": 0,
+                                                        "modifierFlagsCache": 0,
+                                                        "transformFlags": 0,
+                                                        "kind": 193,
+                                                        "expression": {
+                                                            "pos": 2247,
+                                                            "end": 2257,
+                                                            "flags": 0,
+                                                            "modifierFlagsCache": 0,
+                                                            "transformFlags": 0,
+                                                            "escapedText": "ThemeData"
+                                                        },
+                                                        "arguments": [
+                                                            {
+                                                                "pos": 2258,
+                                                                "end": 2302,
+                                                                "flags": 0,
+                                                                "modifierFlagsCache": 0,
+                                                                "transformFlags": 0,
+                                                                "kind": 189,
+                                                                "multiLine": true,
+                                                                "properties": [
+                                                                    {
+                                                                        "pos": 2259,
+                                                                        "end": 2294,
+                                                                        "flags": 0,
+                                                                        "modifierFlagsCache": 0,
+                                                                        "transformFlags": 0,
+                                                                        "kind": 276,
+                                                                        "name": {
+                                                                            "pos": 2259,
+                                                                            "end": 2281,
+                                                                            "flags": 0,
+                                                                            "modifierFlagsCache": 0,
+                                                                            "transformFlags": 0,
+                                                                            "escapedText": "primarySwatch"
+                                                                        },
+                                                                        "initializer": {
+                                                                            "pos": 2282,
+                                                                            "end": 2294,
+                                                                            "flags": 0,
+                                                                            "modifierFlagsCache": 0,
+                                                                            "transformFlags": 0,
+                                                                            "kind": 190,
+                                                                            "expression": {
+                                                                                "pos": 2282,
+                                                                                "end": 2289,
+                                                                                "flags": 0,
+                                                                                "modifierFlagsCache": 0,
+                                                                                "transformFlags": 0,
+                                                                                "escapedText": "Colors"
+                                                                            },
+                                                                            "name": {
+                                                                                "pos": 2290,
+                                                                                "end": 2294,
+                                                                                "flags": 0,
+                                                                                "modifierFlagsCache": 0,
+                                                                                "transformFlags": 0,
+                                                                                "escapedText": "blue"
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "pos": 2304,
+                                                    "end": 2369,
+                                                    "flags": 0,
+                                                    "modifierFlagsCache": 0,
+                                                    "transformFlags": 0,
+                                                    "kind": 276,
+                                                    "name": {
+                                                        "pos": 2304,
+                                                        "end": 2315,
+                                                        "flags": 0,
+                                                        "modifierFlagsCache": 0,
+                                                        "transformFlags": 0,
+                                                        "escapedText": "home"
+                                                    },
+                                                    "initializer": {
+                                                        "pos": 2316,
+                                                        "end": 2369,
+                                                        "flags": 0,
+                                                        "modifierFlagsCache": 0,
+                                                        "transformFlags": 0,
+                                                        "kind": 193,
+                                                        "expression": {
+                                                            "pos": 2320,
+                                                            "end": 2331,
+                                                            "flags": 0,
+                                                            "modifierFlagsCache": 0,
+                                                            "transformFlags": 0,
+                                                            "escapedText": "MyHomePage"
+                                                        },
+                                                        "arguments": [
+                                                            {
+                                                                "pos": 2332,
+                                                                "end": 2368,
+                                                                "flags": 0,
+                                                                "modifierFlagsCache": 0,
+                                                                "transformFlags": 0,
+                                                                "kind": 189,
+                                                                "properties": [
+                                                                    {
+                                                                        "pos": 2333,
+                                                                        "end": 2366,
+                                                                        "flags": 0,
+                                                                        "modifierFlagsCache": 0,
+                                                                        "transformFlags": 0,
+                                                                        "kind": 276,
+                                                                        "name": {
+                                                                            "pos": 2333,
+                                                                            "end": 2339,
+                                                                            "flags": 0,
+                                                                            "modifierFlagsCache": 0,
+                                                                            "transformFlags": 0,
+                                                                            "escapedText": "title"
+                                                                        },
+                                                                        "initializer": {
+                                                                            "pos": 2340,
+                                                                            "end": 2366,
+                                                                            "flags": 0,
+                                                                            "modifierFlagsCache": 0,
+                                                                            "transformFlags": 0,
+                                                                            "kind": 10,
+                                                                            "text": "Flutter Demo Home Page "
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "pos": 2383,
+            "end": 2430,
+            "flags": 0,
+            "modifierFlagsCache": 0,
+            "transformFlags": 0,
+            "kind": 220,
+            "declarationList": {
+                "pos": 2383,
+                "end": 2429,
+                "flags": 2,
+                "modifierFlagsCache": 0,
+                "transformFlags": 0,
+                "kind": 239,
+                "declarations": [
+                    {
+                        "pos": 2390,
+                        "end": 2429,
+                        "flags": 0,
+                        "modifierFlagsCache": 0,
+                        "transformFlags": 0,
+                        "kind": 238,
+                        "name": {
+                            "pos": 2390,
+                            "end": 2395,
+                            "flags": 0,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "escapedText": "main"
+                        },
+                        "initializer": {
+                            "pos": 2397,
+                            "end": 2429,
+                            "flags": 0,
+                            "modifierFlagsCache": 536870912,
+                            "transformFlags": 0,
+                            "kind": 198,
+                            "parameters": [],
+                            "type": {
+                                "pos": 2401,
+                                "end": 2406,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 107
+                            },
+                            "equalsGreaterThanToken": {
+                                "pos": 2406,
+                                "end": 2409,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 37
+                            },
+                            "body": {
+                                "pos": 2409,
+                                "end": 2429,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 192,
+                                "expression": {
+                                    "pos": 2409,
+                                    "end": 2416,
+                                    "flags": 0,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 0,
+                                    "escapedText": "runApp"
+                                },
+                                "arguments": [
+                                    {
+                                        "pos": 2417,
+                                        "end": 2428,
+                                        "flags": 0,
+                                        "modifierFlagsCache": 0,
+                                        "transformFlags": 0,
+                                        "kind": 193,
+                                        "expression": {
+                                            "pos": 2420,
+                                            "end": 2426,
+                                            "flags": 0,
+                                            "modifierFlagsCache": 0,
+                                            "transformFlags": 0,
+                                            "escapedText": "MyApp"
+                                        },
+                                        "arguments": []
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "endOfFileToken": {
+        "pos": 2430,
+        "end": 2431,
+        "flags": 0,
+        "modifierFlagsCache": 0,
+        "transformFlags": 0,
+        "kind": 1
+    },
+    "externalModuleIndicator": {
+        "pos": 0,
+        "end": 48,
+        "flags": 0,
+        "modifierFlagsCache": 536870912,
+        "transformFlags": 0,
+        "kind": 250,
+        "importClause": {
+            "pos": 6,
+            "end": 19,
+            "flags": 0,
+            "modifierFlagsCache": 0,
+            "transformFlags": 0,
+            "kind": 251,
+            "namedBindings": {
+                "pos": 6,
+                "end": 19,
+                "flags": 0,
+                "modifierFlagsCache": 0,
+                "transformFlags": 0,
+                "kind": 253,
+                "elements": [
+                    {
+                        "pos": 8,
+                        "end": 17,
+                        "flags": 0,
+                        "modifierFlagsCache": 0,
+                        "transformFlags": 0,
+                        "kind": 254,
+                        "name": {
+                            "pos": 8,
+                            "end": 17,
+                            "flags": 0,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "escapedText": "override"
+                        }
+                    }
+                ]
+            }
+        },
+        "moduleSpecifier": {
+            "pos": 24,
+            "end": 47,
+            "flags": 0,
+            "modifierFlagsCache": 0,
+            "transformFlags": 0,
+            "kind": 10,
+            "text": "fluid-code/dart/core"
+        }
+    },
+    "nodeCount": 192,
+    "identifierCount": 69,
+    "identifiers": {},
+    "parseDiagnostics": []
+}
